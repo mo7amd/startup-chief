@@ -1,0 +1,12 @@
+<div class="container" ng-controller="IndexController">
+    <div class="row row-content">
+      <div ng-if="!showHellow">
+        <h1>{{message}}</h1>
+      </div> 
+      <div ng-if="showHellow">
+            <div ng-repeat="word in hellow">
+              <h1>hellow{{word.test}}</h1>
+            </div>
+      </div>
+  </div>
+</div>
