@@ -15,6 +15,20 @@ angular.module('IndexOfApp')
     };
   }
 ])
+.service('feedbackFactory',['$resource','baseURL',
+function($resource,baseURL) {
+  this.savefeedback = function() {
+    return $resource(baseURL+'contact/',null);
+  };
+}
+])
 
+.service('subscribeFactory',['$resource','baseURL',
+function($resource,baseURL) {
+  this.saveSubscribe = function() {
+    return $resource(baseURL+'subscribe/',null);
+  };
+}
+])
 
 ;

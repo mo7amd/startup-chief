@@ -1,5 +1,5 @@
 .row-header {
-  margin  : 0px auto;
+  margin  : 0px ;
   padding : 0px 0px;
 }
 
@@ -17,10 +17,11 @@
 }
 
 .jumbotron {
-  margin     : 0px auto;
-  padding    : 70px 30px;
+  margin-bottom:  0px ;
+  padding    : auto;
   color      : floralwhite;
   background : #7986CB;
+  /*height: 100vh;*/
 }
 
 .carousel {
@@ -93,7 +94,6 @@ address {
   font-size : 80%;
 }
 
-body {}
 
 .tab-content {
   padding       : 10px;
@@ -109,4 +109,9 @@ body {}
   position : absolute;
   right    : 0px;
   bottom   : 0px;
+}
+
+section {
+  height: 100vh;
+  padding-top: 60px;
 }

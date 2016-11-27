@@ -1,11 +1,15 @@
 {
-  "name": "name of Website",
+  "name": "StratUp Chief",
   "version": "1.0.0",
-  "description": "",
+  "description": "virtial mintoring platform on the internet",
   "main": "index.html",
   "moduleType": [],
-  "keywords": [],
-  "authors": [],
+  "keywords": [
+    "enterpuener",
+    "mentoring",
+    "StratUp"
+  ],
+  "authors": ["mohamed khaled khalil"],
   "license": "MIT",
   "homepage": "",
   "ignore": [
@@ -16,6 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    
+
   }
 }
