@@ -140,7 +140,7 @@
                 <div class="col-sm-1"></div>
                 <hr>
                 <div class="col-sm-10">
-
+                    <h1>{{hellow}}</h1>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
@@ -225,17 +225,27 @@
     </footer>
     <!-- ************************************************************************************************************************8 -->
     <!-- build:js scripts/main.js -->
+    <!-- endbuild -->
     <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
     <script src='../bower_components/checklist-model/checklist-model.js'></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers.js"></script>
-    <script src="scripts/services.js"></script>
 
-    <!-- endbuild -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyATh8_uLay6hYqvm6WToWoSPg3kitZfaT0",
+            authDomain: "startupchief.firebaseapp.com",
+            databaseURL: "https://startupchief.firebaseio.com",
+            storageBucket: "startupchief.appspot.com",
+            messagingSenderId: "605161325601"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script>
         $(document).ready(function() {
             $("#login-Modal").click(function() {
